@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0d1b2a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.hardware {
+    border: 1px solid white;
+    height: 560px ;
+    width: 350px ;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #1a2b3c;
+}
+
+.display {
+    width: 100%;
+    height: 60px;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    font-size: 24px;
+    color: #0d1b2a;
+}
+
+.btn {
+    font-size: 24px;
+    padding: 20px;
+    border-radius: 10px;
+    width: 70px;
+    border: none;
+    margin: 1px;
+}
+
+.btn:hover{
+    background-color: #0d1b2a;
+    color: #fff;
+    transition: 0.2s ease;
+}
+
+.btn-equals{
+    width: 140px;
+    font-size: 24px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+@keyframes blink{
+    0%,100% {
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+}
+
+.cursor {
+    display: inline-block;
+    width: 2px;
+    height: 70%;
+    background-color: #0d1b2a;
+    margin-left: 5px;
+    animation: blink 1s steps(1) infinite;
+}
+
+@media (max-width: 500px ) and (max-height: 800px){
+    .display {
+        font-size: 1.2em;
+        height: 50px;
+    }
+
+    .btn {
+        height: 50px;
+        font-size: 1em;
+    }
+    
+.hardware{
+    border: 1px solid white;
+    max-height:440px ;
+    max-width: 330px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #1a2b3c; 
+}
+}
